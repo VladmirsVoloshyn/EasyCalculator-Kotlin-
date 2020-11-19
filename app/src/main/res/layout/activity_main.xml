@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/processView"
+        android:layout_width="386dp"
+        android:layout_height="91dp"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/num1Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num1"
+        app:layout_constraintEnd_toStartOf="@+id/num2Btn"
+        app:layout_constraintTop_toBottomOf="@+id/processView" />
+
+    <Button
+        android:id="@+id/num2Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+
+        android:text="@string/num2"
+        app:layout_constraintEnd_toStartOf="@+id/num3Btn"
+        app:layout_constraintTop_toBottomOf="@+id/processView" />
+
+    <Button
+        android:id="@+id/num0Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:onClick="onNumberClick"
+
+        android:text="@string/num0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num8Btn" />
+
+    <Button
+        android:id="@+id/num5Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num5"
+
+        app:layout_constraintEnd_toStartOf="@+id/num6Btn"
+        app:layout_constraintTop_toBottomOf="@+id/num2Btn" />
+
+    <Button
+        android:id="@+id/num8Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num8"
+        app:layout_constraintEnd_toStartOf="@+id/num9Btn"
+        app:layout_constraintTop_toBottomOf="@+id/num5Btn" />
+
+    <Button
+        android:id="@+id/num3Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num3"
+        app:layout_constraintEnd_toStartOf="@+id/sumBtn"
+        app:layout_constraintTop_toBottomOf="@+id/processView" />
+
+    <Button
+        android:id="@+id/num6Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num6"
+        app:layout_constraintEnd_toStartOf="@+id/difBtn"
+        app:layout_constraintTop_toBottomOf="@+id/num3Btn" />
+
+    <Button
+        android:id="@+id/num9Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num9"
+        app:layout_constraintEnd_toStartOf="@+id/multipleBtn"
+        app:layout_constraintTop_toBottomOf="@+id/num6Btn" />
+
+    <Button
+        android:id="@+id/num4Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+        android:text="@string/num4"
+        app:layout_constraintEnd_toStartOf="@+id/num5Btn"
+        app:layout_constraintTop_toBottomOf="@+id/num1Btn" />
+
+    <Button
+        android:id="@+id/num7Btn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="onNumberClick"
+
+
+        android:text="@string/num7"
+        app:layout_constraintEnd_toStartOf="@+id/num8Btn"
+        app:layout_constraintTop_toBottomOf="@+id/num4Btn" />
+
+    <Button
+        android:id="@+id/sumBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/sum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processView" />
+
+    <Button
+        android:id="@+id/difBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/dif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sumBtn" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/clear"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/divBtn" />
+
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/multipleBtn" />
+
+    <Button
+        android:id="@+id/resultBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/result"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/clearBtn" />
+
+    <Button
+        android:id="@+id/multipleBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="onSignClick"
+        android:text="@string/multiple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/difBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
